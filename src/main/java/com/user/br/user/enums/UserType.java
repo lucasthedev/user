@@ -1,2 +1,4 @@
-package com.user.br.user.enums;public enum UserType {
+package com.user.br.user.enums;
+
+public enum UserType {
 }

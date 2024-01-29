@@ -1,2 +1,4 @@
-package com.user.br.user.enums;public enum UserStatus {
+package com.user.br.user.enums;
+
+public enum UserStatus {
 }
