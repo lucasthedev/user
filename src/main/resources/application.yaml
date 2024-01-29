@@ -1,0 +1,17 @@
+server:
+    port: 8087
+
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5455/ead-authuser
+        username: lucas
+        password: 123456lu
+    jpa:
+        hibernate:
+            ddl-auto: update
+            dialect: org.hibernate.dialect.PostgreSQLDialect
+            jdbc:
+                lob.non-contextual-creation: true
+        properties:
+            hibernate:
+                show_sql: true
