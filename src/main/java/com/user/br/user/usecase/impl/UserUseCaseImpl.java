@@ -4,6 +4,8 @@ import com.user.br.user.entity.User;
 import com.user.br.user.repository.UserRepository;
 import com.user.br.user.usecase.UserUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,6 +20,11 @@ public class UserUseCaseImpl implements UserUseCase {
     @Override
     public List<User> findAll() {
         return repository.findAll();
+    }
+
+    @Override
+    public Page<User> findAll(Pageable pageable) {
+        return repository.findAll(pageable);
     }
 
     @Override

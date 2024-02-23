@@ -8,6 +8,7 @@ import com.user.br.user.enums.UserType;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.hateoas.RepresentationModel;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -19,7 +20,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class User implements Serializable {
+public class User extends RepresentationModel<User> implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
     @Id
